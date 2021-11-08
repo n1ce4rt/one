@@ -3,7 +3,7 @@ import React from 'react'
 import {Route} from "react-router-dom";
 import {Navigate} from "react-router-dom";
 import { Routes as Switch } from 'react-router-dom';
-// import Error404 from './pages/Error404';
+import Error404 from './pages/Error404';
 import { Junior } from './pages/Junior';
 import { JuniorPlus } from './pages/JuniorPlus';
 import PreJunior from "./pages/PreJunior";
@@ -31,7 +31,7 @@ function Routes() {
                 <Route path={PATH.JUNIOR_PLUS} element={ <JuniorPlus/> }/>
 
                 {/*у этого роута нет пути, он отрисуется если пользователь захочет попасть на несуществующую страницу*/}
-                {/* <Route path='*' element={ <Error404/> }/> */}
+                <Route path='*' element={ <Error404/> }/>
             </Switch>
 
         </div>
