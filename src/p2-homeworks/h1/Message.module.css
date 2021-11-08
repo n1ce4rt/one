@@ -1,0 +1,37 @@
+.message {
+    align-items: flex-end;
+    text-align: left;
+    max-width: 300px;
+    border-radius: 0.5rem;
+    background-color: rgb(118, 180, 77);
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 5px;
+}
+.avatar {
+    border-radius: 3rem;
+    width: 70px;
+    height: 70px;
+}
+.messageWraper {
+    position: relative;
+    background-color: slategray;
+    display: grid;
+    grid-template-rows: 1fr;
+    border-radius: 1rem 1rem 1rem 0rem;
+    justify-content: stretch;
+    grid-gap: 10px;
+    padding: 0px 15px 15px 15px;
+}
+.text {
+    
+    justify-self: center;
+    max-width: 290px;
+}
+.time  {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
